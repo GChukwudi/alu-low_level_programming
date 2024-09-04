@@ -1,4 +1,2 @@
 #!/bin/bash
-# Script to run a C file through the preprocessor and save the result into file c
-
 gcc -E "$CFILE" -o c
