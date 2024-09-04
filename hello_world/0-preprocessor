@@ -1,17 +1,4 @@
 #!/bin/bash
 # Script to run a C file through the preprocessor and save the result into file c
 
-if [ -z "$CFILE" ]; then
-  echo "CFILE variable not set"
-  exit 1
-fi
-
 gcc -E "$CFILE" -o c
-
-if [ $? -eq 0 ]; then
-  echo "Preprocessing completed! Output saved in file 'c'"
-else
-  echo "Preprocessing failed"
-  exit 1
-fi
-
