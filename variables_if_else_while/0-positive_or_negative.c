@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 
-/*
+/**
  * main - Generate a random number
- * 	  and checks if it is positive
+ *	 and checks if it is positive
  *
  * Return: 0
  */
