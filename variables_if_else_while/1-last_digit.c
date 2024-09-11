@@ -8,7 +8,7 @@
  * 	prints wether or not the last digit is > 5,
  * 	is 0, or < 6.
  *
- * Return : 0 for success
+ * Return: 0 for success
  */
 int main(void)
 {
