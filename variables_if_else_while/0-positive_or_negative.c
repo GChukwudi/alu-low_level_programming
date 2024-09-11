@@ -2,8 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 
+
 /*
- * main - Entry
+ * main - Generate a random number
+ * 	  and checks if it is positive
  *
  * Return: 0
  */
