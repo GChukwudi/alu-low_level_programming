@@ -4,9 +4,7 @@
 
 
 /**
- * main - generates a random number, extracts the last digit,
- * 	prints wether or not the last digit is > 5,
- * 	is 0, or < 6.
+ * main - generates a random number, extracts the last digit
  *
  * Return: 0 for success
  */
@@ -23,7 +21,7 @@ int main(void)
 	else if (n % 10 < 6 && n % 10 != 0)
 		printf("and is less than 6 and not 0\n");
 	else
-		printf(" and is less than 6 and not 0\n");
+		printf(" and is 0\n");
 
 	return (0);
 }
