@@ -14,26 +14,26 @@ void times_table(void)
 	{
 		for (j = 1; j < 9; j++)
 		{
-             n = i * j;
-             if (j != 0)
-             {
-                 _putchar(',');
-                 _putchar(' ');
-                if (n < 10)
-                {
-                    _putchar(' ');
-                }
-             }
-            if (n < 10)
-            {
-                _putchar(n + '0');
-            }
-            else
-            {
-                _putchar((n / 10) + '0');
-                _putchar((n % 10) + '0');
-            }
-        }
-         _putchar('\n');
-    }
+			n = i * j;
+			if (j != 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+				if (n < 10)
+				{
+					_putchar(' ');
+				}
+			}
+			if (n < 10)
+			{
+				_putchar(n + '0');
+			}
+			else
+			{
+				_putchar((n / 10) + '0');
+				_putchar((n % 10) + '0');
+			}
+		}
+		_putchar('\n');
+	}
 }
