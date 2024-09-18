@@ -1,26 +1,21 @@
-#include <stdio.h>
 #include <main.h>
 
-
 /**
- * print_message - Prints "_putchar" followed by a new line
+ * main - Entry point of the program
  *
- * Return: void
- */
-
-void print_message(void)
-{
-	printf("_putchar\n");
-}
-
-/**
- * main - Entry
- *
- * Return: 0 success
+ * Return: 0 on success
  */
 
 int main(void)
 {
-	print_message();
+	putchar('_');
+	putchar('p');
+	putchar('u');
+	putchar('t');
+	putchar('c');
+	putchar('h');
+	putchar('a');
+	putchar('r');
+
 	return 0;
 }
