@@ -18,5 +18,5 @@ int main(void)
 	putchar('r');
 	putchar('\n');
 
-	return 0;
+	return (0);
 }
