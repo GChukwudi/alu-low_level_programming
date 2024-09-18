@@ -2,7 +2,7 @@
 
 /**
  * main - prints the sum of the even-valued terms of the Fibonacci sequence
- * 
+ *
  * Return: 0
  */
 
