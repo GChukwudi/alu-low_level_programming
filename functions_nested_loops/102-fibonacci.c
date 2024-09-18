@@ -8,26 +8,26 @@
 
 int main(void)
 {
-    long int i, j, k, next;
+	long int i, j, k, next;
 
-    i = 1;
-    j = 2;
+	i = 1;
+	j = 2;
 
-    printf("%ld, %ld, ", i, j);
+	printf("%ld, %ld, ", i, j);
 
-    for (k = 3; k <= 50; k++)
-    {
-        next = i + j;
-        printf("%ld", next);
+	for (k = 3; k <= 50; k++)
+	{
+		next = i + j;
+		printf("%ld", next);
 
-        if (k == 50)
-            printf("\n");
-        else
-            printf(", ");
+		if (k == 50)
+			printf("\n");
+		else
+			printf(", ");
 
-        i = j;
-        j = next;
-    }
+		i = j;
+		j = next;
+	}
 
-    return (0);
+	return (0);
 }
