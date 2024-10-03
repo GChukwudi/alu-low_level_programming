@@ -1,28 +1,32 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - keygen for crackme5
- * @ac: number of arguments
- * @av: arguments
+ * main - generates random valid passwords for the program 101-crackme
  *
- * Return: 0
+ * Return: Always 0.
  */
 
-int main(int ac, char **av)
+int main(void)
 {
-	int i, sum, len;
-	char *str;
+    int pass_w[100];
+    int i, sum, n;
 
-	str = av[1];
-	len = 0;
-	sum = 0;
+    sum = 0;
+    srand(time(NULL));
 
-	if (ac != 2)
-		return (1);
-	while (str[len])
-		len++;
-	for (i = 0; i < len; i++)
-		sum += str[i];
-	printf("%d\n", sum);
-	return (0);
+    for (i = 0; i < 100; i++)
+    {
+        pass_w[i] = rand() % 78 + 48;
+        sum += pass_w[i];
+        putchar(pass_w[i]);
+        if ((2772 - sum) - pass_w[i] >= 48 && (2772 - sum) - pass_w[i] <= 78)
+        {
+            n = (2772 - sum) - pass_w[i];
+            sum += n;
+            pass_w[i] = n;
+            putchar(n);
+        }
+    }
 }
