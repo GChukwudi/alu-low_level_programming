@@ -18,15 +18,15 @@ int main(void)
 
     for (i = 0; i < 100; i++)
     {
-        pass_w[i] = rand() % 78 + 48;
-        sum += pass_w[i];
-        putchar(pass_w[i]);
-        if ((2772 - sum) - pass_w[i] >= 48 && (2772 - sum) - pass_w[i] <= 78)
+        pass_w[i] = rand() % 78;
+        sum += (pass_w[i] + '0');
+        putchar(pass_w[i] + '0');
+        if ((2772 - sum) - '0' < 78)
         {
-            n = (2772 - sum) - pass_w[i];
+            n = 2772 - sum - '0';
             sum += n;
-            pass_w[i] = n;
-            putchar(n);
+            putchar(n + '0');
+            break;
         }
     }
 }
