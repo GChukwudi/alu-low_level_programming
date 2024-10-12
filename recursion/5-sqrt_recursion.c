@@ -10,15 +10,15 @@
  */
 int check(int n, int i)
 {
-    if (n * n == i)
-    {
-        return (n);
-    }
-    if (n * n > i)
-    {
-        return (-1);
-    }
-    return (check(n + 1, i));
+	if (n * n == i)
+	{
+		return (n);
+	}
+	if (n * n > i)
+	{
+		return (-1);
+	}
+	return (check(n + 1, i));
 }
 
 /**
@@ -29,13 +29,13 @@ int check(int n, int i)
  */
 int _sqrt_recursion(int n)
 {
-    if (n < 0)
-    {
-        return (-1);
-    }
-    if (n == 0)
-    {
-        return (0);
-    }
-    return (check(1, n));
+	if (n < 0)
+	{
+		return (-1);
+	}
+	if (n == 0)
+	{
+		return (0);
+	}
+	return (check(1, n));
 }
