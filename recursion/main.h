@@ -16,4 +16,5 @@ int wildcmp(char *s1, char *s2);
 int check(int n, int i);
 int check_palindrome(char *s, int i, int j);
 
+
 #endif
