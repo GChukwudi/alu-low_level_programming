@@ -5,7 +5,7 @@
  * check - checks for the square root of a number
  * @n: number to check
  * @i: number to find the square root of
- * 
+ *
  * Return: the square root of i
  */
 int check(int n, int i)
