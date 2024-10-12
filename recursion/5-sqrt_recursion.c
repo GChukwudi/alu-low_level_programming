@@ -8,7 +8,7 @@
  * 
  * Return: the square root of i
  */
-int check(int n, int i);
+int check(int n, int i)
 {
     if (n * n == i)
     {
