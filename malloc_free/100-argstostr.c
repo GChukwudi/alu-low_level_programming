@@ -12,44 +12,43 @@
 
 char *argstostr(int ac, char **av)
 {
-    char *concat;
-    int i, j, len = 0, total = 0;
+	char *concat;
+	int i, j, len = 0, total = 0;
 
-    if (ac == 0 || av == NULL)
-        return (NULL);
+	if (ac == 0 || av == NULL)
+		return (NULL);
 
-    for (i = 0; i < ac; i++)
-    {
-        j = 0;
-        while (av[i][j])
-        {
-            len++;
-            j++;
-        }
-        total += len;
-        len = 0;
-    }
+	for (i = 0; i < ac; i++)
+	{
+		j = 0;
+		while (av[i][j])
+		{
+			len++;
+			j++;
+		}
+		total += len;
+		len = 0;
+	}
 
-    concat = malloc((total + ac + 1) * sizeof(char));
+	concat = malloc((total + ac + 1) * sizeof(char));
 
-    if (concat == NULL)
-        return (NULL);
+	if (concat == NULL)
+		return (NULL);
 
-    total = 0;
-    for (i = 0; i < ac; i++)
-    {
-        j = 0;
-        while (av[i][j])
-        {
-            concat[total] = av[i][j];
-            j++;
-            total++;
-        }
-        concat[total] = '\n';
-        total++;
-    }
+	total = 0;
+	for (i = 0; i < ac; i++)
+	{
+		j = 0;
+		while (av[i][j])
+		{
+			concat[total] = av[i][j];
+			j++;
+			total++;
+		}
+		concat[total] = '\n';
+		total++;
+	}
+	concat[total] = '\0';
 
-    concat[total] = '\0';
-
-    return (concat);
+	return (concat);
 }
