@@ -4,7 +4,7 @@
  * append_text_to_file - appends text at the end of a file
  * @filename: ame of the file to append
  * @text_content: NULL terminated string to write to the file
- * 
+ *
  * Return: 1 on success, -1 on failure
  */
 
