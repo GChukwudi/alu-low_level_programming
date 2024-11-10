@@ -45,7 +45,7 @@ void check_elf(unsigned char *e_ident)
 void print_magic(unsigned char *e_ident)
 {
 	int i;
-	
+
 	printf("  Magic:   ");
 
 	for (i = 0; i < EI_NIDENT; i++)
